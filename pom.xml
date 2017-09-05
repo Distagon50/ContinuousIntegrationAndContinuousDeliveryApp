@@ -7,6 +7,11 @@
 	<artifactId>continuousintegrationandcontinuousdeliveryapp</artifactId>
 	<version>0.0.7-SNAPSHOT</version>
 	<packaging>jar</packaging>
+	
+	<scm>
+		<connection>https://demo.daveland.com.cn/devops/gitlab/springbootCD/ContinuousIntegrationAndContinuousDeliveryApp</connection>
+		<url>https://demo.daveland.com.cn/devops/gitlab/springbootCD/ContinuousIntegrationAndContinuousDeliveryApp</url>
+	</scm>
 
 	<name>ContinuousIntegrationAndContinuousDeliveryApp</name>
 	<description>Demo project for Spring Boot</description>
@@ -26,6 +31,8 @@
 
 	<distributionManagement>
 		<repository>
+			<id>nexus-releases</id>
+			<name>My Nexus</name>
 			<url>https://demo.daveland.com.cn/devops/nexus/#admin/repository/repositories:testrepo</url>
 		</repository>
 		
