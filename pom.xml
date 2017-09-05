@@ -24,6 +24,13 @@
 		<java.version>1.8</java.version>
 	</properties>
 
+	<distributionManagement>
+		<repository>
+			<url>https://demo.daveland.com.cn/devops/nexus/#admin/repository/repositories:testrepo</url>
+		</repository>
+		
+	</distributionManagement>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
