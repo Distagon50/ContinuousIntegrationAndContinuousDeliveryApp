@@ -1,4 +1,4 @@
-FROM java:oracle-java8
+FROM java:8-jdk
 MAINTAINER lucas <lucas.ganyu.li@accenture.com>
 
 ENTRYPOINT ["/usr/bin/java", "-jar", "/usr/share/myservice/myservice.jar"]
