@@ -6,4 +6,4 @@ ENTRYPOINT ["/usr/bin/java", "-jar", "/usr/share/myservice/myservice.jar"]
 # Add Maven dependencies (not shaded into the artifact; Docker-cached)
 CMD java -jar ContinuousIntegrationAndContinuousDeliveryApp.jar
 # Add the service itself
-ADD target/ContinuousIntegrationAndContinuousDeliveryApp.jar /usr/share/ContinuousIntegrationAndContinuousDeliveryApp.jar
+ADD build/ContinuousIntegrationAndContinuousDeliveryApp.jar /data/ContinuousIntegrationAndContinuousDeliveryApp.jar
