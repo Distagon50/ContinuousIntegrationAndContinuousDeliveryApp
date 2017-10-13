@@ -3,4 +3,4 @@ MAINTAINER lucas <lucas.ganyu.li@accenture.com>
 
 CMD java -jar ContinuousIntegrationAndContinuousDeliveryApp.jar
 # Add the service itself
-ADD build/ContinuousIntegrationAndContinuousDeliveryApp.jar /data/ContinuousIntegrationAndContinuousDeliveryApp.jar
+ADD target/ContinuousIntegrationAndContinuousDeliveryApp.jar /data/ContinuousIntegrationAndContinuousDeliveryApp.jar
