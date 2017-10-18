@@ -9,8 +9,8 @@
 	<packaging>jar</packaging>
 	
 	<scm>
-		<connection>https://demo.daveland.com.cn/devops/gitlab/springbootCD/ContinuousIntegrationAndContinuousDeliveryApp</connection>
-		<url>https://demo.daveland.com.cn/devops/gitlab/springbootCD/ContinuousIntegrationAndContinuousDeliveryApp</url>
+		<connection>https://github.com/Distagon50/ContinuousIntegrationAndContinuousDeliveryApp</connection>
+		<url>https://github.com/Distagon50/ContinuousIntegrationAndContinuousDeliveryApp</url>
 	</scm>
 
 	<name>ContinuousIntegrationAndContinuousDeliveryApp</name>
@@ -32,11 +32,15 @@
 
 	<distributionManagement>
 		<repository>
-			<id>nexus-releases</id>
-			<name>My Nexus</name>
-			<url>https://demo.daveland.com.cn/devops/nexus/#admin/repository/repositories:testrepo</url>
+			<id>maven-snapshots</id>
+			<name>snapshot</name>
+			<url>http://ec2-34-211-91-122.us-west-2.compute.amazonaws.com:8081/repository/maven-snapshots/</url>
 		</repository>
-		
+		<repository>
+			<id>maven-release</id>
+			<name>release</name>
+			<url>http://ec2-34-211-91-122.us-west-2.compute.amazonaws.com:8081/repository/maven-releases//</url>
+		</repository>
 	</distributionManagement>
 
 	<dependencies>
