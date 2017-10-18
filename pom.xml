@@ -31,11 +31,11 @@
 	</properties>
 
 	<distributionManagement>
-		<repository>
+		<snapshotRepository>
 			<id>maven-snapshots</id>
 			<name>snapshot</name>
 			<url>http://ec2-34-211-91-122.us-west-2.compute.amazonaws.com:8081/repository/maven-snapshots/</url>
-		</repository>
+		</snapshotRepository>
 		<repository>
 			<id>maven-release</id>
 			<name>release</name>
