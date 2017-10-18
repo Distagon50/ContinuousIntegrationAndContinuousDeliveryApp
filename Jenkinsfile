@@ -22,7 +22,7 @@ node {
         //sh 'docker build --build-arg username=test --build-arg token=ec3ulgkv2mekoqarv4pzytrh2gdiyuuy5fgqsdnns56e3orxngeq -t "myapplication" -f Dockerfile.'
         //sh 'env'
  		//sh "docker tag ant-wechat:latest https://demo.daveland.com.cn/devops/nexus/repository/testrepo/ant-wechat:0.0.1-SNAPSHOT"
-        docker.withRegistry('http://34.211.91.122:8082/', '2c0a6d6d-a823-4c8e-9ed5-692d1df1329b'){ 
+        docker.withRegistry('http://34.211.91.122:8082/', '82771687-7470-4f2c-afda-561ff6af1964'){ 
         def newApp = docker.build "34.211.91.122:8082/springboot:latest"
         newApp.push()
     }
